@@ -15,10 +15,10 @@
 	});
 </script>
 
-<h1>Demo</h1>
+<h1>namespaces</h1>
 
 {#if data.namespace}
-	<h2>namespace/{data.namespace.id}</h2>
+	<h2>{data.namespace.id}</h2>
 	{#each data.namespace.locks as lock}
 		<div
 			class="{lock.expired ? 'expired' : 'alive'}"
